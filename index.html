@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page UI design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="fa fa-bars"></div>
+    </header>
+    <!-- home section -->
+    <section id="home">
+        <div class="content">
+            <h2>onine</h2>
+            <h1>shopping</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur maxime molestias nemo voluptate et cumque tempore enim obcaecati officiis optio!</p>
+            <a href="#"><button>shop now <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></a>
+            
+            <div class="icons">
+                <a href="#" class=" fab fa fa-instagram"></a>
+                <a href="#" class="fab fa fa-facebook-f"></a>
+                <!-- <a href="#" class=" fab fa fa-"></a> -->
+                <a href="#" class=" fab fa fa-twitter"></a>
+
+            </div>
+              
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaYf_f5AVve_b5T2qls922quxSoq7KZ5B_hxVge4Nc6RVQa2M8" alt="">
+              </div>     
+            
+        </div>
+
+    </section>
+
+
+    <!-- *************** -->
+    <script>
+        $(document).ready(function(){
+            $('.fa-bars').click(function(){
+                $(this).toggleClass('fa-times');
+                $('nav').slideToggle();
+            });
+
+            $('.nav').click(function(){
+                $('.fa-bars').removeClass('fa-times');
+                $('this').slideUp();
+            });
+        });
+    </script>
+</body>
+
+</html>
